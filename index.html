@@ -36,7 +36,10 @@
 				<img class="card-img-top"  alt="Movie image" v-bind:src="damepropiedad(item, 'image')">
 				
 				<div class="card-body">
-					<h5 class="card-title">{{ damepropiedad(item, 'name') }}</h5>	
+          <h5 class="card-title">{{ damepropiedad(item, 'name') }}</h5>
+          
+          <button v-on:click="buttonclick" class="btn btn-primary btn-block">Show</button>
+          
 					<ul>
 						<li v-for="datos in item.data" v-if="datos.name!= 'name' && datos.name!= 'image' ">
 						<span style="font-weight:bold">{{ datos.prompt }} </span><span style="font-weight:italic">{{ datos.value }} </span>

@@ -58,6 +58,15 @@ var app = new Vue({
         }
       }
       return resultado;
-	  }
+    },
+    buttonclick: function(event){
+      var boton = event.target;
+      if( boton.innerHTML == "Show" ){
+        boton.innerHTML = "Hide"
+      }
+      else{
+        boton.innerHTML = "Show"
+      }
+    }
   }
 });

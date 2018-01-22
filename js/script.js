@@ -61,11 +61,16 @@ var app = new Vue({
     },
     buttonclick: function(event){
       var boton = event.target;
+
+      var lista = boton.nextElementSibling;
+
       if( boton.innerHTML == "Show" ){
-        boton.innerHTML = "Hide"
+        boton.innerHTML = "Hide";
+        lista.style.display = "none"; //visibility = hidden
       }
       else{
-        boton.innerHTML = "Show"
+        boton.innerHTML = "Show";
+        lista.style.display = "block"; //visible
       }
     }
   }

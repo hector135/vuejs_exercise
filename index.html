@@ -42,7 +42,8 @@
           
 					<ul>
 						<li v-for="datos in item.data" v-if="datos.name!= 'name' && datos.name!= 'image' ">
-						<span style="font-weight:bold">{{ datos.prompt }} </span><span style="font-weight:italic">{{ datos.value }} </span>
+              <span style="font-weight:bold">{{ datos.prompt }} </span>
+              <span style="font-weight:italic">{{ datos.value }} </span>
 						</li>
 					</ul>
 						<a class="card-link" v-bind:href="item.href">	Ver en wikipedia </a>
